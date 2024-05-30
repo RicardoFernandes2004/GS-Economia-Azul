@@ -1,0 +1,1082 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    transition: all 0.3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(#5493E0, #001126);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #001126;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #000818;
+}
+
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #001126 transparent; 
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 12px;
+    background: linear-gradient(#5493E0, #001126);
+    z-index: -1; 
+    pointer-events: none; 
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: #5493E0;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color: #8af5ff;
+    font-size: 22px;
+}
+nav a{
+    font-size: 20px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 736px;
+    background: url(/assets/oceano-azul1.png)  lightgray 50% / cover no-repeat;
+    width: 100%;
+}
+.middle_text{
+    display: flex;
+    width: 545px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(270deg, rgba(4, 33, 70, 0.50) 5.4%, rgba(209, 234, 246, 0.50) 10.33%, rgba(69, 155, 188, 0.50) 67.69%, rgba(201, 219, 233, 0.50) 99.14%);
+    border-radius: 26px;
+    flex-shrink: 0;
+    color: #060607;
+    text-align: center;
+    font-family: "IM FELL French Canon SC";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bottom_title{
+    position: absolute;
+    right: 0;
+    top: 636px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    background-color: #01183780;
+    border-radius: 26px;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 701px;
+}
+
+.problem{
+    background: linear-gradient(180deg, #042146 0%, #2667BA 100%);
+    width: 100%;
+    height: 826px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.problem_title{
+    position: absolute;
+    top: 850px;
+    left: 20px;
+    border-radius: 38px;
+    background: #002D66;
+    display: flex;
+    width: 338px;
+    height: 183px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+.problem_title h1{
+    text-align: center;
+}
+
+.polution_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1100px;
+    left: 20px;
+    z-index: 2;
+}
+
+.problem > .text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 346px;
+    height: 85px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #002D66;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 1500px;
+    left: 20px;
+    z-index: 1;
+}
+.problem > .text1 > p{
+    text-align: center;
+}
+
+.problem > .text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1046px;
+    height: 125px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    position: absolute;
+    top: 850px;
+    right: 40px;
+    background-color: #002D66;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1;
+}
+.problem > .text2 > p{
+    text-align: center;
+}
+
+.dirty_up_turtle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1100px;
+    right: 350px;
+}
+
+.problem > .text3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 846px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #002D66;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 1480px;
+    right: 140px;
+    z-index: 1;
+}
+.problem > .text3 > p{
+    text-align: center;
+}
+
+.problem_cardume{
+    position: absolute;
+    top: 1200px;
+    left: 450px;
+    rotate: 20deg;
+}
+
+.problem_bolha1{
+    position: absolute;
+    top: 1020px;
+    left: 300px;
+    z-index: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.problem_alga{
+    position: absolute;
+    top: 1450px;
+    left: -5px;
+    z-index: 0;
+    width: auto;
+    height: 200px;
+}
+
+.problem_coral{
+    position: absolute;
+    top: 1450px;
+    right: 0;
+    z-index: 1;
+    width: 80px;
+    height: auto;
+}
+.problem_bolha2{
+    position: absolute;
+    top: 1450px;
+    right: 40px;
+    z-index: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.problem_golfinho{
+    position: absolute;
+    top: 1150px;
+    right: 80px;
+    z-index: 1;
+    rotate: 40deg;
+    height: 150px;
+    width: auto;
+}
+
+.problem_bolha3{
+    position: absolute;
+    top: 800px;
+    right: 0;
+    z-index: 0;
+    width: 80px;
+    height: 80px;
+}
+.solution{
+    width: 100%;
+    height: 836px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #2667BA;
+}
+
+.solution_title_container{
+    position: absolute;
+    top: 1650px;
+    right: 20px;
+    border-radius: 26px;
+    background: #002D66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 338px;
+    height: 90px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.solution_text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 396px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #002D66;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 1800px;
+    left: 120px;
+    z-index: 1;
+    text-align: center;
+}
+
+.solution_text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 396px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #002D66;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 1900px;
+    right: 60px;
+    z-index: 1;
+    text-align: center;
+}
+
+.solution_text3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 396px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #002D66;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 2000px;
+    left: 100px;
+    z-index: 1;
+    text-align: center;
+}
+
+.solution_text4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 396px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #002D66;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 2100px;
+    right: 120px;
+    z-index: 1;
+    text-align: center;
+}
+
+.solution_text5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 396px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #002D66;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 2200px;
+    left: 160px;
+    z-index: 1;
+    text-align: center;
+}
+
+.solution_baleia{
+    position: absolute;
+    top: 1700px;
+    right: 35%;
+    z-index: 1;
+    rotate: 20deg;
+    height: 150px;
+    width: auto;
+}
+
+.solution_golfinho{
+    position: absolute;
+    top: 2200px;
+    left: 38%;
+    z-index: 1;
+    rotate: 80deg;
+    height: 150px;
+    width: auto;
+}
+
+.solution_alga{
+    position: absolute;
+    top: 1800px;
+    right: 0;
+    z-index: 0;
+    width: auto;
+    height: 200px;
+}
+
+.solution_peixe{
+    position: absolute;
+    top: 1900px;
+    left: 0;
+    z-index: 0;
+    width: 80px;
+    height: auto;
+}
+
+.objectives{
+    background: linear-gradient(180deg, #2667BA 0%, #0C3779 100%);
+    width: 100%;
+    height: 836px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.objectives_title_container{
+    position: absolute;
+    top: 2480px;
+    left: 45px;
+    border-radius: 26px;
+    background: #2667BA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 338px;
+    height: 90px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1;
+
+}
+
+.objectives_text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 696px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #2667BA;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 2550px;
+    right: 120px;
+    z-index: 1;
+    text-align: center;
+}
+
+.objectives_text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 496px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #2667BA;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 2680px;
+    left: 100px;
+    z-index: 1;
+    text-align: center;
+}
+
+.objectives_text3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 796px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #2667BA;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 2900px;
+    right: 60px;
+    z-index: 1;
+    text-align: center;
+}
+
+.objectives_text4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 796px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #2667BA;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 3200px;
+    right: 23%;
+    z-index: 1;
+    text-align: center;
+}
+
+.objectives_bolha{
+    position: absolute;
+    top: 2440px;
+    left: 0;
+    z-index: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.objectives_alga1{
+    position: absolute;
+    top: 2600px;
+    left: 45px;
+    z-index: 0;
+    width: auto;
+    height: 150px;
+}
+
+.objectives_baleia{
+    position: absolute;
+    top: 2750px;
+    right: 35%;
+    z-index: 1;
+    rotate: 10deg;
+    height: 150px;
+    width: auto;
+}
+
+.objectives_alga2{
+    position: absolute;
+    top: 3290px;
+    right: 43%;
+    z-index: 0;
+    width: auto;
+    height: 150px;
+}
+
+.objectives_peixe{
+    position: absolute;
+    top: 3200px;
+    left: 0;
+    z-index: 0;
+    width: 80px;
+    height: auto;
+}
+
+.objectives_cavalo_marinho{
+    position: absolute;
+    top: 3200px;
+    left: 295px;
+    z-index: 2;
+    rotate: 5deg;
+    height: 150px;
+    width: auto;
+}
+
+.objectives_tartaruga{
+    position: absolute;
+    top: 2825px;
+    right: 100px;
+    z-index: 0;
+    rotate: 5deg;
+    height: 150px;
+    width: auto;
+}
+
+.objectives_cardume{
+    position: absolute;
+    top: 3050px;
+    right: 100px;
+    z-index: 0;
+    rotate: 5deg;
+    height: 150px;
+    width: auto;
+}
+
+.public{
+    background: linear-gradient(180deg, #0C397C 0%, #112E54 100%);
+    width: 100%;
+    height: 836px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.public_title_container{
+    position: absolute;
+    top: 3500px;
+    right: 80px;
+    border-radius: 26px;
+    background: #2667BA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 338px;
+    height: 90px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1;
+}
+
+.public_text1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 896px;
+    height: 205px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #2667BA;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 3750px;
+    left: 180px;
+    z-index: 1;
+    text-align: center;
+}
+
+.public_text1 p{
+    font-size: 46px;
+}
+
+.public_text1 ul li{
+    text-align: left;
+}
+
+.public_baleia{
+    position: absolute;
+    top: 3500px;
+    left: 210px;
+    z-index: 1;
+    rotate: 10deg;
+    height: 150px;
+    width: auto;
+}
+
+.public_peixe{
+    position: absolute;
+    top: 3725px;
+    right: 390px;
+    z-index: 3;
+    width: 80px;
+    height: auto;
+}
+
+.public_golfinho{
+    position: absolute;
+    top: 3900px;
+    right: 100px;
+    z-index: 0;
+    rotate: 5deg;
+    height: 150px;
+    width: auto;
+}
+
+.public_alga{
+    position: absolute;
+    top: 3900px;
+    left: 0;
+    z-index: 0;
+    width: auto;
+    height: 150px;
+}
+.benefits{
+    background: linear-gradient(180deg, #112E54 0%, #032149 100%);
+    width: 100%;
+    height: 836px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.benefits_title_container{
+    position: absolute;
+    top: 4300px;
+    left: 45px;
+    border-radius: 26px;
+    background: #2667BA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 338px;
+    height: 90px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1;
+}
+
+.benefits_text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 696px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #2667BA;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 4200px;
+    right: 120px;
+    z-index: 1;
+    text-align: center;
+}
+
+.benefits_text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 496px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #2667BA;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 4500px;
+    right: 120px;
+    z-index: 1;
+    text-align: center;
+}
+
+.benefits_text3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 796px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #2667BA;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 4800px;
+    right: 60px;
+    z-index: 1;
+    text-align: center;
+}
+
+.benefits_carinha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #2667BA;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 4450px;
+    left: 60px;
+    z-index: 1;
+    text-align: center;
+}
+
+.benefits_carinha img{
+    margin-top: 50px;
+    width: 400px;
+    height: auto;
+}
+
+.benefits_agua_viva1{
+    position: absolute;
+    top: 4380px;
+    left: 0;
+    z-index: 3;
+    width: 160px;
+    height: auto;
+}
+
+.benefits_agua_viva2{
+    position: absolute;
+    top: 4300px;
+    left: 670;
+    z-index: 3;
+    width: 80px;
+    height: auto;
+    rotate: 23deg;
+}
+
+.benefits_coral{
+    position: absolute;
+    top: 4700px;
+    right: 0;
+    z-index: 0;
+    width: 80px;
+    height: auto;
+}
+
+.benefits_peixe{
+    position: absolute;
+    top: 4700px;
+    left: 0;
+    z-index: 2;
+    width: 80px;
+    height: auto;
+}
+
+.help{
+    background: linear-gradient(180deg, #032148 0%, #011126 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 836px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.help_title_container{
+    position: absolute;
+    top: 5200px;
+    left: 33%;
+    border-radius: 26px;
+    background: #2667BA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 538px;
+    height: 120px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1;
+}
+
+.help_text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 696px;
+    height: 95px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background-color: #2667BA;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 5500px;
+    left: 26%;
+    z-index: 1;
+    text-align: center;
+}
+
+.help_golfinho{
+    position: absolute;
+    top: 5200px;
+    left: 180px;
+    z-index: 0;
+    width: 200px;
+    height: auto;
+}
+
+.help_cardume1{
+    position: absolute;
+    top: 5700px;
+    left: 0;
+    z-index: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.help_cardume2{
+    position: absolute;
+    top: 5500px;
+    right: 0;
+    z-index: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.help_tartaruga{
+    position: absolute;
+    top: 5100px;
+    right: 60px;
+    z-index: 0;
+    width: 130px;
+    height: auto;
+}
+
+footer{
+    background: #001126;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer_title_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    height: 90px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1;
+}
+
+.footer_text1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 33.33%;
+    height: 90px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer_text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    height: 90px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
