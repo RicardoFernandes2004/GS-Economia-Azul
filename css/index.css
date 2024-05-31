@@ -5,6 +5,7 @@
 }
 img {
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 img:hover{
     transform: scale(1.1);
@@ -1079,4 +1080,71 @@ footer{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.info_tartaruga, .info_peixe, .info_cardume, .info_baleia, .info_golfinho, .info_corais_e_algas, .info_agua_viva, .info_cavalo_marinho {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-around;
+    text-align: center;
+    width: 350px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: #0C397C;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1000;
+    box-shadow: #000818;
+}
+
+.close {
+    border-radius: 40%;
+    background-color: #5493E0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.polution_image img{
+    cursor: default;
+}
+
+.contact_form{
+    display: none;
+    position: fixed;
+    justify-content: space-around;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-around;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+    background-color: #0C397C;
+    color: #FFF;
+    font-family: "IM FELL French Canon SC";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 1000;
+    box-shadow: #000818;
+}
+
+.contact_form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }

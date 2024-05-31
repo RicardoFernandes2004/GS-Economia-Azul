@@ -10,19 +10,84 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <!--
+        essas divs de informação tem o display none pra quando o usuário apertar em cada respectivo elemento de seu nome ele troque o display
+    -->
+    <div id="info_tartaruga" class="info_tartaruga">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>Durante o derramamento de petróleo da Deepwater Horizon em 2010, estima-se que entre 4.900 e 7.600 tartarugas marinhas juvenis grandes e adultas, além de 56.000 a 166.000 tartarugas juvenis pequenas, morreram devido ao impacto direto do petróleo.</p>
+    </div>
+
+    <div id="info_peixe" class="info_peixe">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>Os peixes são uma das principais fontes de alimento para os seres humanos e outras espécies marinhas. Quando contaminados por petróleo, eles podem sofrer envenenamento e morte, afetando a cadeia alimentar e a biodiversidade dos oceanos.</p>
+    </div>
+
+    <div id="info_cardume" class="info_cardume">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>O derramamento do Exxon Valdez em 1989, que despejou 11 milhões de galões de petróleo no Prince William Sound, resultou em bilhões de ovos de salmão e arenque mortos, além de muitos peixes adultos.</p>
+    </div>
+
+    <div id="info_baleia" class="info_baleia">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>Baleias são vulneráveis a derramamentos de petróleo porque precisam respirar na superfície, onde encontram o óleo. O petróleo também contamina sua alimentação, prejudicando sua saúde geral.</p>
+    </div>
+
+    <div id="info_golfinho" class="info_golfinho">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>O derramamento de petróleo da Deepwater Horizon em 2010 expôs mais de 1.400 mamíferos marinhos a produtos químicos perigosos, causando doenças respiratórias, reprodutivas e neurológicas em golfinhos</p>
+    </div>
+
+    <div id="info_corais_e_algas" class="info_corais_e_algas">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>O petróleo bloqueia a luz solar e é tóxico para as algas, enquanto para os corais, causa morte dos tecidos, prejudica a reprodução e crescimento, e provoca branqueamento.</p>
+    </div>
+
+    <div id="info_agua_viva" class="info_agua_viva">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>As águas-vivas são animais marinhos sensíveis à poluição por petróleo. O contato com o petróleo pode causar danos aos seus tentáculos e prejudicar sua capacidade de se alimentar e se reproduzir.</p>
+    </div>
+    <div id="info_cavalo_marinho" class="info_cavalo_marinho">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>O petróleo destrói habitats, causa danos diretos à saúde e afeta a alimentação dos cavalos-marinhos, impactando negativamente seu crescimento, reprodução e sobrevivência geral.</p>
+    </div>
+
+    <div id="contact_form" class="contact_form">
+        <p onclick="closeForm()" class="close">X</p>
+        <form method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="install">É você que realizará a instalação?</label>
+            <select id="install" name="install" required>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+        <p>Nossa equipe entrará em contato!</p>
+    </div>
+
+<!--Aqui acaba as divs com display None-->
+
     <nav>
         <div class="name_container">
             <h1 class="name">Eco Sensor</h1>
         </div>
         <div class="links_container">
             <ul>
-                <li><a href="">O problema</a></li>
-                <li><a href="">A solução</a></li>
-                <li><a href="">Objetivos</a></li>
-                <li><a href="">Publico</a></li>
-                <li><a href="">Benefícios</a></li>
-                <li><a href="">Como ajudaremos</a></li>
-                <li><a href="">Adquira já!</a></li>
+                <li><a href="#problem">O problema</a></li>
+                <li><a href="#solution">A solução</a></li>
+                <li><a href="#objectives">Objetivos</a></li>
+                <li><a href="#publico">Publico</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#help">Como ajudaremos</a></li>
+                <li><a href="#" onclick="openForm()">Adquira já!</a></li>
             </ul>
         </div>
     </nav>
@@ -37,7 +102,7 @@
         </div>
     </section>
 
-    <section class="problem">
+    <section id="problem" class="problem">
         <div class="problem_title">
             <h1>Petróleo nos oceanos</h1>
         </div>
@@ -52,7 +117,7 @@
                 Os peixes, aves e mamíferos marinhos sofrem envenenamento e podem morrer. A poluição afeta a cadeia alimentar, resultando em impactos duradouros nos ecossistemas.</p>
         </div>
         <div class="dirty_up_turtle">
-            <img src="assets\_109143207_turt 1.png" alt="Tartaruga afetada por petróleo">
+            <img src="assets\_109143207_turt 1.png" alt="tartaruga">
         </div>
         <div class="text3">
             <p>Além disso, o petróleo compromete a qualidade da água e pode atingir áreas costeiras, prejudicando a pesca e o turismo. A recuperação ambiental é lenta e os efeitos podem durar décadas, exigindo esforços significativos de limpeza e restauração.</p>
@@ -66,7 +131,7 @@
         <img class="problem_bolha3" src="assets/Bolha.png" alt="bolha">
     </section>
 
-    <section class="solution">
+    <section id="solution" class="solution">
         <div class="solution_title_container">
             <h1>A solução</h1>
         </div>
@@ -93,7 +158,7 @@
         <img class="solution_peixe" src="assets/Peixe.png" alt="peixe">
 
     </section>
-    <section class="objectives">
+    <section id="objectives" class="objectives">
         <div class="objectives_title_container">
             <h1>Objetivos</h1>
         </div>
@@ -119,7 +184,7 @@
         <img class="objectives_cardume" src="assets/Cardume1.png" alt="cardume">
     </section>
 
-    <section class="public">
+    <section id="publico" class="public">
         <div class="public_title_container">
             <h1>Público</h1>
         </div>
@@ -141,7 +206,7 @@
 
     </section>
 
-    <section class="benefits">
+    <section id="beneficios" class="benefits">
         <div class="benefits_title_container">
             <h1>Benefícios</h1>
         </div>
@@ -156,14 +221,14 @@
         </div>
         <div class="benefits_carinha">
             <p>De quebra, evitamos a morte desse carinha ;)</p>
-            <img src="assets/chelonia_mydas_baby_sea_turtle 1.png" alt="tartaruguinha">
+            <img src="assets/chelonia_mydas_baby_sea_turtle 1.png" alt="tartaruga">
         </div>
         <img class="benefits_agua_viva1" src="assets/Agua viva2.png" alt="agua viva">
         <img class="benefits_agua_viva2" src="assets/Agua viva1.png" alt="agua viva">
         <img class="benefits_coral" src="assets/Coral.png" alt="coral">
         <img class="benefits_peixe" src="assets/Peixe.png" alt="peixe">
     </section>
-    <section class="help">
+    <section id="help" class="help">
         <div class="help_title_container">
             <h1>Como ajudaremos?</h1>
         </div>
@@ -194,6 +259,8 @@
             <p>© 2024 Eco Sensor Holdings Ltd. All rights reserved.</p>
     </footer>
 
-    
+
+    <script src="js/smoothroll.js"></script>
+    <script src="js/info.js"></script>
 </body>
 </html>
