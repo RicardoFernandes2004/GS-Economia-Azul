@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Sensor</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!--
+        essas divs de informação tem o display none pra quando o usuário apertar em cada respectivo elemento de seu nome ele troque o display
+    -->
+    <div id="info_tartaruga" class="info_tartaruga">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>Durante o derramamento de petróleo da Deepwater Horizon em 2010, estima-se que entre 4.900 e 7.600 tartarugas marinhas juvenis grandes e adultas, além de 56.000 a 166.000 tartarugas juvenis pequenas, morreram devido ao impacto direto do petróleo.</p>
+    </div>
+
+    <div id="info_peixe" class="info_peixe">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>Os peixes são uma das principais fontes de alimento para os seres humanos e outras espécies marinhas. Quando contaminados por petróleo, eles podem sofrer envenenamento e morte, afetando a cadeia alimentar e a biodiversidade dos oceanos.</p>
+    </div>
+
+    <div id="info_cardume" class="info_cardume">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>O derramamento do Exxon Valdez em 1989, que despejou 11 milhões de galões de petróleo no Prince William Sound, resultou em bilhões de ovos de salmão e arenque mortos, além de muitos peixes adultos.</p>
+    </div>
+
+    <div id="info_baleia" class="info_baleia">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>Baleias são vulneráveis a derramamentos de petróleo porque precisam respirar na superfície, onde encontram o óleo. O petróleo também contamina sua alimentação, prejudicando sua saúde geral.</p>
+    </div>
+
+    <div id="info_golfinho" class="info_golfinho">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>O derramamento de petróleo da Deepwater Horizon em 2010 expôs mais de 1.400 mamíferos marinhos a produtos químicos perigosos, causando doenças respiratórias, reprodutivas e neurológicas em golfinhos</p>
+    </div>
+
+    <div id="info_corais_e_algas" class="info_corais_e_algas">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>O petróleo bloqueia a luz solar e é tóxico para as algas, enquanto para os corais, causa morte dos tecidos, prejudica a reprodução e crescimento, e provoca branqueamento.</p>
+    </div>
+
+    <div id="info_agua_viva" class="info_agua_viva">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>As águas-vivas são animais marinhos sensíveis à poluição por petróleo. O contato com o petróleo pode causar danos aos seus tentáculos e prejudicar sua capacidade de se alimentar e se reproduzir.</p>
+    </div>
+    <div id="info_cavalo_marinho" class="info_cavalo_marinho">
+        <p onclick="closeInfo()" class="close">X</p>
+        <p>O petróleo destrói habitats, causa danos diretos à saúde e afeta a alimentação dos cavalos-marinhos, impactando negativamente seu crescimento, reprodução e sobrevivência geral.</p>
+    </div>
+
+    <div id="contact_form" class="contact_form">
+        <p onclick="closeForm()" class="close">X</p>
+        <form method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="install">É você que realizará a instalação?</label>
+            <select id="install" name="install" required>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+        <p>Nossa equipe entrará em contato!</p>
+    </div>
+
+<!--Aqui acaba as divs com display None-->
+
+    <nav>
+        <div class="name_container">
+            <h1 class="name">Eco Sensor</h1>
+        </div>
+        <div class="links_container">
+            <ul>
+                <li><a href="#problem">O problema</a></li>
+                <li><a href="#solution">A solução</a></li>
+                <li><a href="#objectives">Objetivos</a></li>
+                <li><a href="#publico">Publico</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#help">Como ajudaremos</a></li>
+                <li><a href="#" onclick="openForm()">Adquira já!</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="main">
+        <div class="middle_text">
+            <p>Solução acessível e eficaz para monitoramento de poluição por petróleo na água em tempo real.</p>
+        </div>
+        <div class="bottom_title">
+            <div class="bottom_title_border">
+                <h1>Eco Sensor</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="problem" class="problem">
+        <div class="problem_title">
+            <h1>Petróleo nos oceanos</h1>
+        </div>
+        <div class="polution_image">
+            <img src="assets\capa_petroleo_blog-e1671025903867 1.png" alt="Petróleo nos oceanos">
+        </div>
+        <div class="text1">
+            <p>O derramamento de petróleo nos oceanos causa graves danos ambientais. </p>
+        </div>
+        <div class="text2">
+            <p>Ele contamina a água, prejudicando a fauna e a flora marinhas. 
+                Os peixes, aves e mamíferos marinhos sofrem envenenamento e podem morrer. A poluição afeta a cadeia alimentar, resultando em impactos duradouros nos ecossistemas.</p>
+        </div>
+        <div class="dirty_up_turtle">
+            <img src="assets\_109143207_turt 1.png" alt="tartaruga">
+        </div>
+        <div class="text3">
+            <p>Além disso, o petróleo compromete a qualidade da água e pode atingir áreas costeiras, prejudicando a pesca e o turismo. A recuperação ambiental é lenta e os efeitos podem durar décadas, exigindo esforços significativos de limpeza e restauração.</p>
+        </div>
+        <img class="problem_cardume" src="assets\Cardume2.png" alt="cardume">
+        <img class="problem_bolha1" src="assets/Bolha.png" alt="bolha">
+        <img class="problem_alga" src="assets/Alga2.png" alt="alga">
+        <img class="problem_coral" src="assets/Coral.png" alt="coral">
+        <img class="problem_bolha2" src="assets/Bolha.png" alt="bolha">
+        <img class="problem_golfinho" src="assets/Golfinho1.png" alt="golfinho">
+        <img class="problem_bolha3" src="assets/Bolha.png" alt="bolha">
+    </section>
+
+    <section id="solution" class="solution">
+        <div class="solution_title_container">
+            <h1>A solução</h1>
+        </div>
+        <div class="solution_text1">
+            <p>Desenvolvimento de um sistema integrado que 
+                utiliza um dispositivo para detectar
+                 níveis de petróleo na água,</p>
+        </div>
+        <div class="solution_text2">
+            <p>Transmissão de dados em tempo real para um site acessível e intuitivo.</p>
+        </div>
+        <div class="solution_text3">
+            <p>Detecção precisa de níveis de petróleo na água usando sensores.</p>
+        </div>
+        <div class="solution_text4">
+            <p>Interface web interativa com gráficos e alertas personalizados.</p>
+        </div>
+        <div class="solution_text5">
+            <p>Sistema de notificações para informar sobre níveis críticos de poluição.</p>
+        </div>
+        <img class="solution_baleia" src="assets/Baleia.png" alt="baleia">
+        <img class="solution_golfinho" src="assets/Golfinho1.png" alt="golfinho">
+        <img class="solution_alga" src="assets/Alga1.png" alt="alga">
+        <img class="solution_peixe" src="assets/Peixe.png" alt="peixe">
+
+    </section>
+    <section id="objectives" class="objectives">
+        <div class="objectives_title_container">
+            <h1>Objetivos</h1>
+        </div>
+        <div class="objectives_text1">
+            <p>Ao monitorar com mais eficácia o nível de derramamento de petróleo nos oceanos, é possível perceber com mais rapidez um nível crítico.</p>
+        </div>
+        <div class="objectives_text2">
+            <p>Pela facilidade de uso, qualquer indivíduo com acesso ao mar pode fazer seu próprio monitoramento</p>
+        </div>
+        <div class="objectives_text3">
+            <p>Quanto mais cedo for notado o derramamento de petróleo e o seu nível de urgência, com maior eficácia será feito o combate ao vazamento para prevenir ainda mais problemas derivados de tal vazamento</p>
+        </div>
+        <div class="objectives_text4">
+            <p>Acreditamos que com maior efetividade na detecção dos vazamentos, mais rápidos eles podem ser denunciados e combatidos.</p>
+        </div>
+        <img class="objectives_bolha" src="assets/Bolha.png" alt="bolha">
+        <img class="objectives_alga1" src="assets/Alga1.png" alt="alga">
+        <img class="objectives_baleia" src="assets/Baleia.png" alt="baleia">
+        <img class="objectives_alga2" src="assets/Alga3.png" alt="alga">
+        <img class="objectives_peixe" src="assets/Peixe.png" alt="peixe">
+        <img class="objectives_cavalo_marinho" src="assets/Cavalo marinho.png" alt="cavalo marinho">
+        <img class="objectives_tartaruga" src="assets/Tartaruga1.png" alt="tartaruga">
+        <img class="objectives_cardume" src="assets/Cardume1.png" alt="cardume">
+    </section>
+
+    <section id="publico" class="public">
+        <div class="public_title_container">
+            <h1>Público</h1>
+        </div>
+        <div class="public_text1">
+            <p>Nossos alvos:</p>
+            <ul>
+                <li>Agências Governamentais Reguladoras Organizações</li>
+                <li>Não Governamentais (ONGs) Ambientais</li>
+                <li>Pescadores e Comunidades Costeiras</li>
+                <li>Instituições de Pesquisas Acadêmicas</li>
+                <li>Indivíduos preocupados com o meio ambiente.</li>
+                <li>Empresas de petróleo</li>
+            </ul>
+        </div>
+        <img class="public_baleia" src="assets/Baleia.png" alt="baleia">
+        <img class="public_peixe" src="assets/Peixe.png" alt="peixe">
+        <img class="public_golfinho" src="assets/Golfinho1.png" alt="golfinho">
+        <img class="public_alga" src="assets/Alga1.png" alt="alga">
+
+    </section>
+
+    <section id="beneficios" class="benefits">
+        <div class="benefits_title_container">
+            <h1>Benefícios</h1>
+        </div>
+        <div class="benefits_text1">
+            <p>Maior eficácia no combate a poluição</p>
+        </div>
+        <div class="benefits_text2">
+            <p>Restauração de fauna e flora marinha derivada do combate a poluição</p>
+        </div>
+        <div class="benefits_text3">
+            <p>Possibilidade de monitoramento também por indivíduos preocupados com o meio ambiente, não só organizações</p>
+        </div>
+        <div class="benefits_carinha">
+            <p>De quebra, evitamos a morte desse carinha ;)</p>
+            <img src="assets/chelonia_mydas_baby_sea_turtle 1.png" alt="tartaruga">
+        </div>
+        <img class="benefits_agua_viva1" src="assets/Agua viva2.png" alt="agua viva">
+        <img class="benefits_agua_viva2" src="assets/Agua viva1.png" alt="agua viva">
+        <img class="benefits_coral" src="assets/Coral.png" alt="coral">
+        <img class="benefits_peixe" src="assets/Peixe.png" alt="peixe">
+    </section>
+    <section id="help" class="help">
+        <div class="help_title_container">
+            <h1>Como ajudaremos?</h1>
+        </div>
+
+        <div class="help_text1">
+            <p>Ao utilizar nosso produto, pesquisadores, ongs, acadêmicos, entidades governamentais, empresas e indivíduos conseguirão medir o nível de poluição dos mares. facilitando a denúncia, fiscalização e combate a poluição por petróleo.</p>
+        </div>
+
+        <img class="help_golfinho" src="assets/Golfinho2.png" alt="golfinho">
+        <img class="help_cardume1" src="assets/Cardume1.png" alt="cardume">
+        <img class="help_cardume2" src="assets/Cardume2.png" alt="cardume">
+        <img class="help_tartaruga" src="assets/Tartaruga2.png" alt="tartaruga">
+
+    </section>
+
+    <footer>
+        <div class="footer_title_container">
+            <h1>Eco Sensor</h1>
+        </div>
+        <div class="footer_text1">
+            <p>Contatos:</p>
+            <ul>
+                <li>LoremIpsum@gmail.com</li>
+                <li>+55 (11) 912345-6789</li>
+            </ul>
+        </div>
+        <div class="footer_text2">
+            <p>© 2024 Eco Sensor Holdings Ltd. All rights reserved.</p>
+    </footer>
+
+
+    <script src="js/smoothroll.js"></script>
+    <script src="js/info.js"></script>
+</body>
+</html>
