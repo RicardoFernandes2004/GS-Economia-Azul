@@ -1148,3 +1148,73 @@ footer{
     align-items: center;
     height: 100%;
 }
+
+@media screen and (max-width: 575px) {
+    body{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        text-align: center;
+    }
+
+    .main, .problem, .solution, .benefits, .help, .objectives{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main div, .problem div, .solution div, .benefits div, .help div, .objectives div{
+        width: 80%;
+        height: auto;
+        margin: 40px;
+        position: static;
+    }
+
+    .problem div {
+        width: 80% !important;
+        height: auto !important;
+        margin: 40px !important;
+        position: static !important;
+    }
+
+    .solution div{
+        width: 80%;
+        height: auto;
+        margin: 40px;
+        position: static;
+    }
+
+    img, .benefits_carinha{
+        display: none;
+    }
+
+    .public_text1{
+        position: static;
+        width: 80%;
+        height: auto;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    .footer_text1 ul li{
+        list-style: none;
+    }
+
+}
