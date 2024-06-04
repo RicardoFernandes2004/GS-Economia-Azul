@@ -103,4 +103,3 @@ document.querySelectorAll('img[alt="bolha"]').forEach(img => {
         img.style.display= 'none';
     });
 });
-
