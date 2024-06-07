@@ -11,7 +11,7 @@ let contactForm = document.getElementById('contact_form');
 function bubblePop() {
     let audio = new Audio('/assets/bubble-sound-43207.mp3');
     audio.play();
-  }
+}
 
 
 document.querySelectorAll('img[alt="tartaruga"]').forEach(img => {
@@ -103,4 +103,3 @@ document.querySelectorAll('img[alt="bolha"]').forEach(img => {
         img.style.display= 'none';
     });
 });
-
